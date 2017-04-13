@@ -34,15 +34,18 @@ function retrieveAll(){
 
 }
 
-
 function retrieveById(){
 
 }
 
-function update(){
+function updateById(id, email){
 
 }
 
-function remove(){
+function removeAll(){
 
+}
+
+function removeById(){
+    //analisar
 }
