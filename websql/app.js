@@ -6,8 +6,8 @@
 
             window.dadosTeste = JSON.parse(this.responseText);
 
-            //Operações de testes no banco;
-            insert();
+            let conexao = new ConnectionFactory();
+            insert(conexao);
             // retrieve();
             // update();
             // remove();
@@ -20,14 +20,17 @@
 })();
 
 
-function insert(){
+function insert(conexao){
 
-    var tempoInicial = Date.now();
+    dadosTeste.forEach((valor)=>{
+        conexao.connection.transaction(function (transacao) {
+            transacao.executeSql('INSERT INTO pessoas (nome, sobrenome, email) VALUES (?, ?, ?)', 
+            [valor.nome, valor.sobrenome, valor.email], function(){console.log("deu certo"), function(){console.log("ERRO")}});
+        });
+    })
 
-    //Operação no banco de dados
 
-    var tempoFinal = Date.now();
-    console.log((tempoFinal - tempoInicial)/1000);
+
 }
 
 function retrieveAll(){
@@ -48,4 +51,29 @@ function removeAll(){
 
 function removeById(){
     //analisar
+}
+
+function ConnectionFactory() {
+
+    this.connection = openDatabase("Aplicacao2", "1.0", "Banco de dados da aplicação", 3*1024*1024);
+
+    this.connection.transaction(function (transacao) {
+        transacao.executeSql('CREATE TABLE IF NOT EXISTS pessoas (id INTEGER PRIMARY KEY ASC, nome, sobrenome, email unique)');
+    });
+
+    // this.connection.transaction(function (transacao) {
+    //     transacao.executeSql('DROP TABLE pessoas');
+    //     console.log("todos removidos");
+    // });
+
+    this.getConnection = function(){
+        if(this.connection){
+            console.log(this.connection);
+            return this.connection;
+        }else{
+            console.log("Falha ao criar Banco de Dados");
+            return null;
+        }       
+    }
+
 }
