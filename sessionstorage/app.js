@@ -7,9 +7,9 @@
             window.dadosTeste = JSON.parse(this.responseText);
 
             //Operações de testes no banco;
-            testeInsert();
+            // testeInsert();
             // testeRetrieve();
-            // testeRemove();
+            testeRemove();
 
         }
     };

@@ -28,13 +28,13 @@ function insert(){
 
     db.put({
         _id: 'dados',
-        nome: dadosTeste         
+        nome: dadosTeste
     }).then(function (response) {
         let tempoFinal = performance.now();;
         console.log((tempoFinal - tempoInicial)/1000);
     }).catch(function (err) {
         console.log("erro");
-    }); 
+    });
 
 }
 
@@ -55,7 +55,7 @@ function remove(){
 
     db.get('dados').then(function(doc) {
         return db.remove(doc);
-    }).then(function (result) {      
+    }).then(function (result) {
         let tempoFinal = performance.now();;
         console.log((tempoFinal - tempoInicial)/1000);
     }).catch(function (err) {
@@ -71,7 +71,7 @@ function testeInsert(){
 
     db.get('dados').then(function(doc) {
         return db.remove(doc);
-    }).then(function (result) {      
+    }).then(function (result) {
         insert();
     }).catch(function (err) {
         console.log(err);
@@ -92,10 +92,10 @@ function testeRemove(){
 
     db.put({
         _id: 'dados',
-        nome: dadosTeste         
+        nome: dadosTeste
     }).then(function (response) {
         remove();
     }).catch(function (err) {
         console.log(err);
-    }); 
+    });
 }

@@ -9,7 +9,9 @@
             //Operações de testes no banco;
             // testeInsert();
             // testeRetrieve();
-            testeRemove();
+            // testeRemove();
+
+            insert();
 
         }
     };
@@ -23,8 +25,17 @@ function insert(){
 
      let tempoInicial = performance.now();
 
-    //Operação no banco de dados
-    localStorage.setItem("dados", JSON.stringify(dadosTeste));
+     // console.log(JSON.stringify(dadosTeste[1]));
+
+
+     for (var i = 0; i <= 28000; i++) {
+            let name = "dados" + i;
+            // localStorage.setItem(name, JSON.stringify(dadosTeste[i]));
+            localStorage.removeItem("dados"+i);
+     }
+
+    // Operação no banco de dados
+    // localStorage.setItem("dados", JSON.stringify(dadosTeste));
 
      let tempoFinal = performance.now();
     console.log((tempoFinal - tempoInicial)/1000);
