@@ -7,10 +7,9 @@
             window.dadosTeste = JSON.parse(this.responseText);
 
             //Operações de testes no banco;
-            insert();
-            // retrieve();
-            // update();
-            // remove();
+            // testeInsert();
+            // testeRetrieve();
+            testeRemove();
 
         }
     };
@@ -22,30 +21,45 @@
 
 function insert(){
 
-    var tempoInicial = Date.now();
+     let tempoInicial = performance.now();
 
     //Operação no banco de dados
+    localStorage.setItem("dados", JSON.stringify(dadosTeste));
 
-    var tempoFinal = Date.now();
+     let tempoFinal = performance.now();
     console.log((tempoFinal - tempoInicial)/1000);
 }
 
-function retrieveAll(){
+function retrieve(){
+    let tempoInicial = performance.now();
+
+    let dados = localStorage.getItem("dados");
+
+    let tempoFinal = performance.now();
+    console.log((tempoFinal - tempoInicial)/1000);
 
 }
 
-function retrieveById(){
+function remove(){
+    let tempoInicial = performance.now();
 
+    localStorage.removeItem("dados");
+
+    let tempoFinal = performance.now();
+    console.log((tempoFinal - tempoInicial)/1000);
 }
 
-function updateById(id, email){
-
+function testeInsert(){
+        localStorage.removeItem("dados");
+        insert();
 }
 
-function removeAll(){
-
+function testeRetrieve(){
+        localStorage.setItem("dados", JSON.stringify(dadosTeste));
+        retrieve();
 }
 
-function removeById(){
-    //analisar
+function testeRemove(){
+        localStorage.setItem("dados", JSON.stringify(dadosTeste));
+        remove();
 }
