@@ -1,6 +1,6 @@
-(function(){	
+(function(){
 
-	var xhttp = new XMLHttpRequest();
+    var xhttp = new XMLHttpRequest();
     xhttp.onreadystatechange = function() {
         if (this.readyState == 4 && this.status == 200) {
 
@@ -11,26 +11,31 @@
             // retrieve();
             // update();
             // remove();
-           
-        }	
-	};
-	xhttp.open("GET", "./dados.json");
-	xhttp.send();
-		
-})(); 
+
+        }
+    };
+    xhttp.open("GET", "./dados.json");
+    xhttp.send();
+
+})();
 
 
 function insert(){
 
-	var tempoInicial = Date.now();
+    var tempoInicial = Date.now();
 
-	//Operação no banco de dados
+    //Operação no banco de dados
 
-	var tempoFinal = Date.now();
-	console.log((tempoFinal - tempoInicial)/1000);
+    var tempoFinal = Date.now();
+    console.log((tempoFinal - tempoInicial)/1000);
 }
 
-function retrieve(){
+function retrieveAll(){
+
+}
+
+
+function retrieveById(){
 
 }
 
