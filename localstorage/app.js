@@ -4,7 +4,7 @@
     xhttp.onreadystatechange = function() {
         if (this.readyState == 4 && this.status == 200) {
 
-            window.dadosTeste = this.responseText;
+            window.dadosTeste = JSON.parse(this.responseText);
 
             //Operações de testes no banco;
             insert();
