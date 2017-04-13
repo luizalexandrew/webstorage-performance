@@ -10,7 +10,7 @@
 
             // testeInsert();
             // testeRetrieve();
-            testeRemove();
+            // testeRemove();
 
         }
     };
