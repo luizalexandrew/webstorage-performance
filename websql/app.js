@@ -1,6 +1,6 @@
 (function(){
 
-    let xhttp = new XMLHttpRequest();
+    var xhttp = new XMLHttpRequest();
     xhttp.onreadystatechange = function() {
         if (this.readyState == 4 && this.status == 200) {
 
@@ -11,7 +11,7 @@
             // testeInsert();
             // testeRetrieve();
             testeRemove();
-           
+
         }
     };
     xhttp.open("GET", "./dados.json");
@@ -28,14 +28,14 @@ function insert(){
 
     conexao.connection.transaction((transacao)=> {
         dadosTeste.forEach((valor)=>{
-            transacao.executeSql('INSERT INTO pessoas (nome, sobrenome, email) VALUES (?, ?, ?)', 
+            transacao.executeSql('INSERT INTO pessoas (nome, sobrenome, email) VALUES (?, ?, ?)',
             [valor.nome, valor.sobrenome, valor.email]);
         });
     }, function(err){console.log(err)}, function(success){
         let tempoFinal = performance.now();
         console.log((tempoFinal - tempoInicial)/1000);
     });
-    
+
 }
 
 function retrieve(){
@@ -48,7 +48,7 @@ function retrieve(){
             var resultados = [];
             var len = results.rows.length, i;
             for (i = 0; i < len; i++) {
-                    
+
                 var pessoa ={
                     id: results.rows.item(i).id,
                     nome: results.rows.item(i).nome,
@@ -60,7 +60,7 @@ function retrieve(){
             let tempoFinal = performance.now();
             console.log((tempoFinal - tempoInicial)/1000);
         });
-            
+
     });
 }
 
@@ -73,7 +73,7 @@ function remove(){
         let tempoFinal = performance.now();
         console.log((tempoFinal - tempoInicial)/1000);
     });
-   
+
 }
 
 function ConnectionFactory() {
@@ -91,7 +91,7 @@ function ConnectionFactory() {
         }else{
             console.log("Falha ao criar Banco de Dados");
             return null;
-        }       
+        }
     }
 
 }
@@ -118,7 +118,7 @@ function testeRemove(){
 
     conexao.connection.transaction((transacao)=> {
         dadosTeste.forEach((valor)=>{
-            transacao.executeSql('INSERT INTO pessoas (nome, sobrenome, email) VALUES (?, ?, ?)', 
+            transacao.executeSql('INSERT INTO pessoas (nome, sobrenome, email) VALUES (?, ?, ?)',
             [valor.nome, valor.sobrenome, valor.email]);
         });
     }, function(err){console.log(err)}, function(success){
