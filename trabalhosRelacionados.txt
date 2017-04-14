@@ -3,8 +3,8 @@
 ------offiline e offiline first -------
 https://tableless.com.br/a-importancia-do-offline-first/
 https://www.w3.org/TR/html5/browsers.html#offline
-https://developer.chrome.com/apps/offline_apps
-https://developer.mozilla.org/en-US/Apps/Fundamentals/Offline
+https://developer.chrome.com/apps/offline_apps --- Mateus
+https://developer.mozilla.org/en-US/Apps/Fundamentals/Offline -- Mateus
 https://www.w3.org/TR/offline-webapps/
 https://techbeacon.com/offline-first-web-mobile-apps-top-frameworks-components
 http://nomadev.com.br/fullstack-offline-api-first/
