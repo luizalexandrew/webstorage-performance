@@ -1,37 +1,41 @@
     ---- Trabalhos relacionados ----
 
-
-
-http://antigo.unipar.br/~seinpar/2013/artigos/Clodoaldo%20Hiroiti%20Iamashita.pdf
-https://docs.google.com/viewer?url=patentimages.storage.googleapis.com/pdfs/US6272662.pdf
-https://docs.google.com/viewer?url=patentimages.storage.googleapis.com/pdfs/US20090222569.pdf
-
+------offiline e offiline first -------
 https://tableless.com.br/a-importancia-do-offline-first/
 https://www.w3.org/TR/html5/browsers.html#offline
-https://www.w3.org/TR/webstorage/
 https://developer.chrome.com/apps/offline_apps
 https://developer.mozilla.org/en-US/Apps/Fundamentals/Offline
 https://www.w3.org/TR/offline-webapps/
 https://techbeacon.com/offline-first-web-mobile-apps-top-frameworks-components
 http://nomadev.com.br/fullstack-offline-api-first/
-https://www.researchgate.net/profile/Stefan_Kimak/publication/281065948_Performance_Testing_and_Comparison_of_Client_Side_Databases_Versus_Server_Side/links/55d3465c08ae0a3417226302.pdf
-http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.721.6450&rep=rep1&type=pdf
-
--------------------------------------------------------------------------------------------------------
-
-https://html.spec.whatwg.org/multipage/webstorage.html#the-localstorage-attribute      -> espeficidação webstorage
-https://www.w3.org/TR/webdatabase/ -> site oficial
-https://pouchdb.com/guides/ -> site oficial pouch
-https://www.w3schools.com/browsers/default.asp -> estatistica de uso dos navegadores
-https://www.sitepoint.com/html5-web-storage/ -> webstorage
-https://diveintohtml5.com.br/storage.html#methods -> limitações navegadores atuais
-https://www.um.edu.mt/library/oar//handle/123456789/14734
 http://offlinefirst.org/ --> OFFLINE first
 https://brasil.uxdesign.cc/depois-de-mobile-first-o-conceito-de-offline-first-1f55edfdd953 -->conceito
 http://offlinefirst.org/casestudies/ ->> caso de uso offline first
 https://developer.chrome.com/apps/offline_apps ->> chrome offline
 https://www.um.edu.mt/library/oar//handle/123456789/14734   --> Abstracting eventually consistent databases for offline web application usage
+
+-----sobre os bancos------
+
+http://antigo.unipar.br/~seinpar/2013/artigos/Clodoaldo%20Hiroiti%20Iamashita.pdf -recursos html incluindo web storage
+https://www.w3.org/TR/webstorage/
+https://html.spec.whatwg.org/multipage/webstorage.html#the-localstorage-attribute      -> espeficidação webstorage
+https://www.w3.org/TR/webdatabase/ -> site oficial
+https://pouchdb.com/guides/ -> site oficial pouch
+https://www.sitepoint.com/html5-web-storage/ -> webstorage
+https://diveintohtml5.com.br/storage.html#methods -> limitações navegadores atuais
 https://nolanlawson.com/2015/09/29/indexeddb-websql-localstorage-what-blocks-the-dom/  --> esse fala muia coisa
+
+-----Comparaçoes -------
+https://www.researchgate.net/profile/Stefan_Kimak/publication/281065948_Performance_Testing_and_Comparison_of_Client_Side_Databases_Versus_Server_Side/links/55d3465c08ae0a3417226302.pdf
 http://csimms.botonomy.com/2011/05/html5-storage-wars-localstorage-vs-indexeddb-vs-web-sql.html -- comparação
 
+-------others-----------
 
+http://gs.statcounter.com/browser-market-share/desktop/worldwide - others
+https://www.w3schools.com/browsers/default.asp -> estatistica de uso dos navegadores
+https://www.um.edu.mt/library/oar//handle/123456789/14734
+https://docs.google.com/viewer?url=patentimages.storage.googleapis.com/pdfs/US6272662.pdf   -others
+https://docs.google.com/viewer?url=patentimages.storage.googleapis.com/pdfs/US20090222569.pdf -others
+http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.721.6450&rep=rep1&type=pdf -others
+
+-------------------------------------------------------------------------------------------------------
