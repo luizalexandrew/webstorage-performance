@@ -5,3 +5,15 @@
 http://antigo.unipar.br/~seinpar/2013/artigos/Clodoaldo%20Hiroiti%20Iamashita.pdf
 https://docs.google.com/viewer?url=patentimages.storage.googleapis.com/pdfs/US6272662.pdf
 https://docs.google.com/viewer?url=patentimages.storage.googleapis.com/pdfs/US20090222569.pdf
+
+
+https://tableless.com.br/a-importancia-do-offline-first/
+https://www.w3.org/TR/html5/browsers.html#offline
+https://www.w3.org/TR/webstorage/
+https://developer.chrome.com/apps/offline_apps
+https://developer.mozilla.org/en-US/Apps/Fundamentals/Offline
+https://www.w3.org/TR/offline-webapps/
+https://techbeacon.com/offline-first-web-mobile-apps-top-frameworks-components
+http://nomadev.com.br/fullstack-offline-api-first/
+
+
