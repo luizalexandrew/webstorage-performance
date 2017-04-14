@@ -6,7 +6,6 @@ http://antigo.unipar.br/~seinpar/2013/artigos/Clodoaldo%20Hiroiti%20Iamashita.pd
 https://docs.google.com/viewer?url=patentimages.storage.googleapis.com/pdfs/US6272662.pdf
 https://docs.google.com/viewer?url=patentimages.storage.googleapis.com/pdfs/US20090222569.pdf
 
-
 https://tableless.com.br/a-importancia-do-offline-first/
 https://www.w3.org/TR/html5/browsers.html#offline
 https://www.w3.org/TR/webstorage/
@@ -15,5 +14,22 @@ https://developer.mozilla.org/en-US/Apps/Fundamentals/Offline
 https://www.w3.org/TR/offline-webapps/
 https://techbeacon.com/offline-first-web-mobile-apps-top-frameworks-components
 http://nomadev.com.br/fullstack-offline-api-first/
+
+-------------------------------------------------------------------------------------------------------
+
+https://html.spec.whatwg.org/multipage/webstorage.html#the-localstorage-attribute      -> espeficidação webstorage
+https://www.w3.org/TR/webdatabase/ -> site oficial
+https://pouchdb.com/guides/ -> site oficial pouch
+https://www.w3schools.com/browsers/default.asp -> estatistica de uso dos navegadores
+https://www.sitepoint.com/html5-web-storage/ -> webstorage
+https://diveintohtml5.com.br/storage.html#methods -> limitações navegadores atuais
+https://www.um.edu.mt/library/oar//handle/123456789/14734
+http://offlinefirst.org/ --> OFFLINE first
+https://brasil.uxdesign.cc/depois-de-mobile-first-o-conceito-de-offline-first-1f55edfdd953 -->conceito
+http://offlinefirst.org/casestudies/ ->> caso de uso offline first
+https://developer.chrome.com/apps/offline_apps ->> chrome offline
+https://www.um.edu.mt/library/oar//handle/123456789/14734   --> Abstracting eventually consistent databases for offline web application usage
+https://nolanlawson.com/2015/09/29/indexeddb-websql-localstorage-what-blocks-the-dom/  --> esse fala muia coisa
+http://csimms.botonomy.com/2011/05/html5-storage-wars-localstorage-vs-indexeddb-vs-web-sql.html -- comparação
 
 
