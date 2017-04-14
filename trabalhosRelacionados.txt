@@ -14,6 +14,8 @@ https://developer.mozilla.org/en-US/Apps/Fundamentals/Offline
 https://www.w3.org/TR/offline-webapps/
 https://techbeacon.com/offline-first-web-mobile-apps-top-frameworks-components
 http://nomadev.com.br/fullstack-offline-api-first/
+https://www.researchgate.net/profile/Stefan_Kimak/publication/281065948_Performance_Testing_and_Comparison_of_Client_Side_Databases_Versus_Server_Side/links/55d3465c08ae0a3417226302.pdf
+http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.721.6450&rep=rep1&type=pdf
 
 -------------------------------------------------------------------------------------------------------
 
