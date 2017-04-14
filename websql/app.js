@@ -7,10 +7,9 @@
             window.dadosTeste = JSON.parse(this.responseText);
 
             //Operações de testes no banco;
-
             // testeInsert();
             // testeRetrieve();
-            testeRemove();
+            // testeRemove();
 
         }
     };
@@ -33,7 +32,7 @@ function insert(){
         });
     }, function(err){console.log(err)}, function(success){
         let tempoFinal = performance.now();
-        console.log((tempoFinal - tempoInicial)/1000);
+        console.log((tempoFinal - tempoInicial));
     });
 
 }
@@ -58,7 +57,7 @@ function retrieve(){
                 resultados.push(pessoa);
             }
             let tempoFinal = performance.now();
-            console.log((tempoFinal - tempoInicial)/1000);
+            console.log((tempoFinal - tempoInicial));
         });
 
     });
@@ -71,7 +70,7 @@ function remove(){
     conexao.connection.transaction(function (transacao) {
         transacao.executeSql('DELETE FROM pessoas');
         let tempoFinal = performance.now();
-        console.log((tempoFinal - tempoInicial)/1000);
+        console.log((tempoFinal - tempoInicial));
     });
 
 }

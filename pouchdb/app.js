@@ -1,5 +1,8 @@
 (function(){
 
+window.indexedDB = window.indexedDB || window.mozIndexedDB || window.webkitIndexedDB || window.msIndexedDB;
+
+
     var xhttp = new XMLHttpRequest();
     xhttp.onreadystatechange = function() {
         if (this.readyState == 4 && this.status == 200) {
@@ -10,7 +13,7 @@
 
             // testeInsert();
             // testeRetrieve();
-            // testeRemove();
+            testeRemove();
 
         }
     };
@@ -31,7 +34,7 @@ function insert(){
         nome: dadosTeste
     }).then(function (response) {
         let tempoFinal = performance.now();;
-        console.log((tempoFinal - tempoInicial)/1000);
+        console.log((tempoFinal - tempoInicial));
     }).catch(function (err) {
         console.log("erro");
     });
@@ -44,7 +47,7 @@ function retrieve(){
 
     db.get('dados').then(function(doc) {
         let tempoFinal = performance.now();;
-        console.log((tempoFinal - tempoInicial)/1000);
+        console.log((tempoFinal - tempoInicial));
     });
 }
 
@@ -57,7 +60,7 @@ function remove(){
         return db.remove(doc);
     }).then(function (result) {
         let tempoFinal = performance.now();;
-        console.log((tempoFinal - tempoInicial)/1000);
+        console.log((tempoFinal - tempoInicial));
     }).catch(function (err) {
         console.log(err);
     });
@@ -83,12 +86,9 @@ function testeRetrieve(){
     retrieve();
 }
 
-
 function testeRemove(){
 
     let db = new PouchDB('db');
-
-    // remove();
 
     db.put({
         _id: 'dados',

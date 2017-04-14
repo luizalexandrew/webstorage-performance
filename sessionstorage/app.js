@@ -27,7 +27,7 @@ function insert(){
     sessionStorage.setItem("dados", JSON.stringify(dadosTeste));
 
      let tempoFinal = performance.now();
-    console.log((tempoFinal - tempoInicial)/1000);
+    console.log((tempoFinal - tempoInicial));
 }
 
 function retrieve(){
@@ -36,7 +36,7 @@ function retrieve(){
     let dados = sessionStorage.getItem("dados");
 
     let tempoFinal = performance.now();
-    console.log((tempoFinal - tempoInicial)/1000);
+    console.log((tempoFinal - tempoInicial));
 
 }
 
@@ -46,7 +46,7 @@ function remove(){
     sessionStorage.removeItem("dados");
 
     let tempoFinal = performance.now();
-    console.log((tempoFinal - tempoInicial)/1000);
+    console.log((tempoFinal - tempoInicial));
 }
 
 function testeInsert(){

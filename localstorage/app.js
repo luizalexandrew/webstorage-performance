@@ -7,9 +7,10 @@
             window.dadosTeste = JSON.parse(this.responseText);
 
             //Operações de testes no banco;
+
             // testeInsert();
             // testeRetrieve();
-            // testeRemove();
+            testeRemove();
 
         }
     };
@@ -27,7 +28,7 @@ function insert(){
     localStorage.setItem("dados", JSON.stringify(dadosTeste));
 
      let tempoFinal = performance.now();
-    console.log((tempoFinal - tempoInicial)/1000);
+    console.log((tempoFinal - tempoInicial));
 }
 
 function retrieve(){
@@ -36,7 +37,7 @@ function retrieve(){
     let dados = localStorage.getItem("dados");
 
     let tempoFinal = performance.now();
-    console.log((tempoFinal - tempoInicial)/1000);
+    console.log((tempoFinal - tempoInicial));
 
 }
 
@@ -46,7 +47,7 @@ function remove(){
     localStorage.removeItem("dados");
 
     let tempoFinal = performance.now();
-    console.log((tempoFinal - tempoInicial)/1000);
+    console.log((tempoFinal - tempoInicial));
 }
 
 function testeInsert(){
