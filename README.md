@@ -1,7 +1,9 @@
-# webstorage-performance
+#Teste de performance de banco de dados utilizados no Front-end WEB.
 
-Testando essas paradas de webstorage caraio.
+Código fonte dos programas e resultados obtidos na execução dos testes de performance.
 
-Vamos ver qual é mais rapido com uns dados ai :D
+Banco de dados utilizados: Session Storage, Local Storage, WebSQL, PouchDB.
+Navegadores utilizados: Google Chrome, Mozilla Firefox.
+
 
 
